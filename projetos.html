@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/1561icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
+
+</head>
+
+<body>
+  <div class="btn-geral">
+    <a href="#" class="btn-prox  prev"> Anterior</a>
+    <a href="index.html" class="btn-prox  ">Home</a>
+    <a href="#" class="btn-prox  next"> Próximo </a>
+  </div>
+  <div class="carousel ">
+    <a class="carousel-item" href="https://archjoy.github.io/bikcraft-personalizadas/" target="_blank"><img src="img/bikecraft.jpg"></a>
+    <a class="carousel-item" href="https://archjoy.github.io/uplod_Brafe-html-csspuro/" target="_blank"><img src="img/brafe.jpg"></a>
+    <a class="carousel-item" href="https://archjoy.github.io/nature-projeto-js/" target="_blank"><img src="img/nature.jpg"></a>
+    <a class="carousel-item" href="https://archjoy.github.io/wildbeast-project/" target="_blank"><img src="img/wildbeast.jpg"></a>
+    <a class="carousel-item" href="https://archjoy.github.io/bootstrap-caravan/" target="_blank"><img src="img/caravan.png"></a>
+    <a class="carousel-item" href="https://archjoy.github.io/flexblog-upload/" target="_blank"><img src="img/Flexbox.png"></a>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/materialize/js/materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        shift: 100,
+      });
+
+    });
+
+    $('.prev').click(function () {
+      $('.carousel').carousel('prev');
+
+
+      $('.next').click(function () {
+        $('.carousel').carousel('next');
+
+
+      });
+
+    });
+
+
+  </script>
+</body>
+
+
+</html>
